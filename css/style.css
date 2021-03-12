@@ -1,0 +1,368 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Cairo', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #FCFCFC;
+}
+
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.wraper{
+  width: 1140px;
+  height: 100vh;
+  margin: 0 auto;
+  /* border: 2px solid blue; */
+}
+/************************** main style start here ***********************/
+
+
+/* top header here */
+
+.navtop{
+  width: 100%;
+  background-color: #5E5ECC;
+  margin-top: 10px;
+  float: left;
+}
+.navtop h3{
+  /* width: 80%; */
+  padding: 15px 10px;
+  line-height: 30px;
+  float: left;
+  color: white;
+}
+
+.navtop_icon{
+  width: 20%;
+  float: right;
+  padding: 15px 40px;
+}
+.navtop_icon ul{
+  text-align: center;
+  margin-right: -65px;
+}
+.navtop_icon ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+.navtop_icon ul li a{
+  display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 20px;
+    line-height: 33px;
+    margin-left: 10px;
+    color: #1196F5;
+    
+}
+
+.navtop_icon ul li a:hover{
+  background-color: #0f8a84;
+  color: #2c00f1;
+}
+
+
+
+
+/* 2nd header */
+
+
+header{
+  width: 100%;
+  float: left;
+}
+header .logo{
+  width: 25%;
+  float: left;
+}
+header .logo img{
+  width: 250px;
+}
+.menu{
+ width: 75%;
+ float: left;
+}
+.menu ul{
+  text-align: right;
+  display:block;
+  margin-top: 45px;
+}
+.menu ul li{
+ display: inline-block;
+}
+.menu ul li a{
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 10px;
+  color: #191a20;
+  transition: 0.5s;
+  position: relative;
+}
+.menu ul li a::after{
+  content: "";
+  background: rgb(8, 58, 195);
+  position: absolute;
+  top:3px;
+  left:-7px;
+  height: 80%;
+  width: 3px;
+}
+.menu ul li a:hover{
+  color: rgb(8, 58, 195);
+  text-decoration: underline;
+}
+
+/* baner section start here */
+
+.banner{
+  width: 100%;
+  float: left;
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.705) 100%,red 20%),url(../images/backgroud.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* border: 1px solid black; */
+  margin-top: 10px;
+}
+.banner_inner{
+  float: left;
+  width: 100%;
+  padding: 30px;
+  margin: 50px 0;
+  text-align: center;
+  font-family: 'Hind Siliguri', sans-serif
+}
+
+.banner_inner h1{
+  font-size: 50px;
+  line-height: 60px;
+  color: #00a0fd;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.banner_inner p{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  color: rgb(190, 180, 42);
+  margin-bottom: 10px;
+}
+
+.banner_inner h2{
+  font-family: 'Cairo', sans-serif;
+  font-size: 35px;
+  font-weight: 700px;
+  color: #0f92ce;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  
+}
+.banner_inner a{
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #00a0fd;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.banner_inner a:hover{
+  color: orange;
+  transition: 0.5s;
+}
+
+/* about section */
+
+.aboutsection{
+  width: 100%;
+  /* border:1px solid black; */
+  float: left;
+  margin:20px 0px;
+}
+
+.title{
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin-top:30px;
+  margin-bottom: 70px;
+}
+
+.title h2{
+  text-transform: uppercase;
+  font-size: 42px;
+  font-family: monospace;
+  padding: 15px;
+  font-weight: 800;
+  
+}
+
+.aboutleft{
+  float: left;
+  width: 50%;
+}
+.aboutleft img{
+  width: 481px;
+  height: 419px;
+  padding: 10px;
+}
+
+.aboutright{
+  float: left;
+  width: 50%;
+}
+.aboutright h2{
+  text-transform: capitalize;
+  word-spacing: 8px;
+  margin-bottom: 10px;
+}
+.aboutright p{
+  color: rgb(59, 53, 53);
+  font-size: 15px;
+}
+
+/* department section */
+
+.depart{
+  width: 100%;
+  /* height: 600px; */
+  /* border:1px solid black; */
+  float: left;
+  margin:20px 0px;
+}
+.depart img{
+  width: 335px;
+  height: 321px;
+  padding: 50px 50px;
+  background-color: #EFE93E;
+  border-radius: 20px;
+  transition: 0.8s ease-in-out;
+}
+.departbox1 img:hover{
+  background-color: #3e6def;
+}
+.departbox2 img:hover{
+  background-color: #14c257;
+}
+.departbox3 img:hover{
+  background-color: #ef3ee0;
+}
+
+
+.departbox1{
+  float: left;
+  width: 30%;
+  text-align: center;
+  
+}
+
+
+.departbox2{
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-left: 58px;
+}
+.departbox3{
+  float: right;
+  width: 30%;
+  text-align: center;
+}
+
+.departbox1 h2,.departbox2 h2,.departbox3 h2{
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 10px;
+  color: #252246;
+}
+
+/* who chose us section */
+
+.whycho{
+  width: 100%;
+  float: left;
+  height: 600px;
+}
+.whycholeft{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.whycholeft img{
+  width: 455px;
+}
+.whychoright{
+  width: 50%;
+  float: left;
+}
+.whybtn{
+  width: 80%;
+  text-align: right;
+}
+.whybtn a{
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #00a0fd;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.whybtn a:hover{
+  color: rgb(255, 0, 55);
+}
+
+/* footer start here */
+
+footer{
+  width: 100%;
+  float: left;
+  /* height: 300px; */
+  background-color: #F5F5FE;
+  padding: 40px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+}
+footer h1{
+  color: rgb(41, 38, 38);
+  text-transform: uppercase;
+  padding: 15px 0px;
+}
+.ftdiv1, .ftdiv2, .ftdiv3, .ftdiv4{
+  float: left;
+  width: 25%;
+}
+
+.ftdiv4 img{
+  width: 100%;
+}
+.lastashik{
+  float: left;
+  width: 100%;
+  background-color: #00a0fd;
+}
+
+
+
